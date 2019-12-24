@@ -1,0 +1,307 @@
+/*container class used to style the heading of the webpage*/
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+body{
+	overflow-x: hidden;
+}
+/*This section tag covers all the elements in the header section*/
+header {
+	height: 10%;
+	top: 0;
+	width: 100%;
+	padding: 1%;
+}
+/*Styling for the webpage heading*/
+@font-face{
+	font-family:'Questrial', sans-serif;
+	src: url(Questrial.ttf);
+	font-family: 'Roboto', sans-serif;
+	src: url(Roboto-Regular.ttf);
+}
+h2 {
+	float: left;
+	color: white;
+	text-align: bottom;
+	padding: 9px 450px;
+	font-size: 23px;
+	font-family: 'Questrial', sans-serif;;
+	letter-spacing: 4px;
+}
+/*The styling for the logo on the webpage.*/
+img {
+	float: left;
+	width: 70px;
+	height: 70px;
+}
+/*Navigation bar styling.*/
+#navBar nav {
+	text-align: center;
+	padding-top: 100px;
+	padding-right: 50px;
+}
+/*Styling for the navigation bar elements*/
+a {
+	text-decoration: none;
+	padding: 50px;
+	display: inline;
+	font-family: 'Questrial', sans-serif;
+	color: #05EFEE;
+}
+/*This tag is for changing the colour of the text in the navigation bar to blue on hover.*/
+a:hover {
+	color: blue;
+}
+/*The selected tag will be changed to a different colour.*/
+.selected {
+	color: whitesmoke;
+	height: 10px;
+	width: 10px;
+	transition: 0.3s;
+}
+/*hr stands for horizontal rule which is a line to separate the sections on the webpage.*/
+hr {
+	visibility: visible;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 70%;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+h3 {
+	font-size: 50%;
+	color: white;
+	padding-top: 5px;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 4px;
+}
+/*Flip card tags for how to play steps - 1,2 and 3.8*/
+#flipcard1 {
+	background-color: transparent;
+	width: 280px;
+	height: 200px;
+	perspective: 1000px;
+	padding-top: 50px;
+	padding-left: 35px;
+	display: inline-block;
+}
+#innerflipcard1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+/*This tag handles the rotation based on the cursor hover.*/
+#flipcard1:hover #innerflipcard1 {
+	transform: rotateY(180deg);
+}
+.frontflipcard, .backflipcard {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+/*Front side of the flip card*/
+.frontflipcard {
+	font-size: 200%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	line-height: 180px;
+	background-color: #242562;
+	border-radius: 20px 20px 20px 20px;
+}
+/*Back side of the flip card.*/
+.backflipcard {
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	line-height: 25px;
+	font-size: 25px;
+	background-color: white;
+	color: #242562;
+	transform: rotateY(180deg);
+	font-weight: bold;
+}
+#flipcard2 {
+	background-color: transparent;
+	width: 280px;
+	height: 200px;
+	perspective: 1000px;
+	padding-left: 170px;
+	padding: -151px 500px;
+	display: inline-block;
+}
+#innerflipcard2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+#flipcard2:hover #innerflipcard2 {
+	transform: rotateY(180deg);
+}
+
+#flipcard3 {
+	background-color: transparent;
+	width: 280px;
+	height: 200px;
+	perspective: 1000px;
+	padding-left: 180px;
+	display: inline-block;
+}
+#innerflipcard3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+#flipcard3:hover #innerflipcard3 {
+	transform: rotateY(180deg);
+}
+#line2 {
+	visibility: visible;
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 70%;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+/*About the game introduction*/
+#aboutthegame {
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 40px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.entireform {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 35%;
+	margin: 5%;
+	padding-top: 0%;
+	padding-left: 0%;
+	align-items: center;
+}
+/*Login*/
+#login {
+	grid-column: 1/2;
+	background-size: cover;
+	background-position: center center;
+	width: 400px;
+	height: 350px;
+	border-radius: 5px;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	background-image: linear-gradient(to left bottom, #4473ed, #4374e3, #4474d9, #4674cf, #4974c5, #456cb5, #4164a5, #3d5c95, #314b7c, #253b64, #1a2c4d, #0f1d37);
+}
+/*Sign Up*/
+#signup {
+	background-size: cover;
+	background-position: center center;
+	width: 400px;
+	height: 350px;
+	border-radius: 5px;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	background-image: linear-gradient(to left bottom, #4473ed, #4374e3, #4474d9, #4674cf, #4974c5, #456cb5, #4164a5, #3d5c95, #314b7c, #253b64, #1a2c4d, #0f1d37);
+}
+.signin {
+	font-size: 220%;
+	padding-left: 80px;
+	padding-top: 10%;
+}
+#logout{
+	display:none;
+}
+/*Label for username*/
+.username {
+	width: 60%;
+	height: 8%;
+	margin-left: 50px;
+	margin-top: 30px;
+	border: none;
+	outline: none;
+	border-radius: 5px 5px 5px 5px;
+}
+/*Label for password*/
+.password {
+	width: 60%;
+	height: 8%;
+	margin-left: 50px;
+	margin-top: 30px;
+	border: none;
+	outline: none;
+	border-radius: 5px 5px 5px 5px;
+}
+/*Link for both login and sign up section, styling included.*/
+.confirm {
+	cursor: pointer;
+	margin: 30%;
+	float: left;
+	border-radius: 5em;
+	background: white;
+	color: black;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 60%;
+	margin-top: 5%;
+	font-size: 15px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.14);
+}
+/*Table styling for leaderboard*/
+
+footer p {
+	color: white;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	font-family: 'Questrial', sans-serif;
+	margin-left: 38%
+}
+
+#gamepicture>img{
+	width: 450px;
+	height: 450px;
+	margin-left: 30%;
+	margin-bottom: 10%;
+}
+#scoreboard,td,th{
+	background-color: white;
+	border: 1px solid black;
+	width: 400px;
+	height: 80px;
+	margin-left: 33%;
+	text-align: center;
+}
+td{
+	font-size: 20px;
+}
+th{
+	font-size: 20px;
+}
+
+#logout{
+	border-radius:10px  ;
+	padding: 1%;
+	width: 25%;
+	margin-top: 10%;
+	margin-left: 38%;
+}

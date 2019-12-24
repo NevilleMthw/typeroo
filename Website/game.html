@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Typeroo</title>
+        <link rel="stylesheet" type="text/css" href="game.css">
+    </head>
+
+    <body>
+        <div id="gameContainer">
+            <div id= "mainmenu">
+                <button id = "home">Home</button>
+                <button id = "easy">Easy</button>
+                <button id = "medium">Medium</button>
+                <button id = "hard">Hard</button>
+                
+            </div>
+            <div id="game">
+                
+                <div id="gamebox">
+                    <div class="healthBar">
+                        <div class="bossHp">Boss Hp:</div>
+                        <div class="healthBg">
+                            <div class="health"></div>
+                        </div>
+    </div>
+    
+                    
+                        <div class="wordsWrap">
+                            <p class="words"></p>
+                        </div>
+                    <img src="Mons0.gif" id="monster_start">
+                    <img src="Mons0-die.gif" id="monster_die">
+                    <div id="timestatus">
+                        <h1 class="time">Time : <span id="theTime">-</span></h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="gamewin">
+                <h1 class="win">You Win</h1>
+            </div>
+    
+            <div id="gameover">
+                <h1 class="lose">Game Over</h1> 
+            </div>
+            <div id="score">
+                <div class="myscore"><span id="updatescore">-</span>Score</div>
+            </div>
+    </div>
+        <script src='game.js'></script>
+        </body>
+
+        </html>
+        
+     
